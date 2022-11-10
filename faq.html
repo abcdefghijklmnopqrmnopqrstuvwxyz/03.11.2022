@@ -8,7 +8,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
     <body>
-        <header class="navbar py-3 border-bottom border-secondary" style="background-image: url(img/bg.jpg);">
+        <header class="navbar py-3 border-bottom border-secondary sticky-top" style="background-image: url(img/bg.jpg);">
             <div class="container-fluid d-flex justify-content-center">
                 <div class="d-lg-none d-flex">
                     <a class="navbar-brand text-primary">Menu</a>
@@ -20,7 +20,7 @@
                     <ul class="nav nav-pills d-block d-lg-flex text-center">
                         <hr class="border border-primary border-2 d-lg-none">
                         <li class="nav-item px-4 py-lg-0 py-2"><a href="index.html" class="nav-link border border-primary">Home</a></li>
-                        <li class="nav-item px-4 py-lg-0 py-2"><a href="#" class="nav-link border border-primary">Features</a></li>
+                        <li class="nav-item px-4 py-lg-0 py-2"><a href="features.html" class="nav-link border border-primary">Features</a></li>
                         <li class="nav-item px-4 py-lg-0 py-2"><a href="#" class="nav-link border border-primary">Pricing</a></li>
                         <li class="nav-item px-4 py-lg-0 py-2"><a href="faq.html" class="nav-link border border-primary active">FAQs</a></li>
                         <li class="nav-item px-4 py-lg-0 py-2"><a href="#" class="nav-link border border-primary">About</a></li>
@@ -29,62 +29,91 @@
             </div>
         </header>
 
-        <main>
-            <div class="container mt-5">
-                <div id="list-example" class="list-group mb-3">
-                    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-                </div>
-                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy border p-3">
-                    <h4 id="list-item-1">Item 1</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum magnam temporibus corrupti quis vero minima dolorum commodi aut quidem libero aperiam alias, 
-                        inventore veniam quo, exercitationem magni? Aliquid, tempora. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Necessitatibus corporis ea cum porro non officia aperiam quam officiis saepe! Nemo, autem. Repellat officia vero cumque ex ipsam, inventore dolor ad.
-                    </p>
-                    <h4 id="list-item-2">Item 2</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum magnam temporibus corrupti quis vero minima dolorum commodi aut quidem libero aperiam alias, 
-                        inventore veniam quo, exercitationem magni? Aliquid, tempora. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Necessitatibus corporis ea cum porro non officia aperiam quam officiis saepe! Nemo, autem. Repellat officia vero cumque ex ipsam, inventore dolor ad.                    
-                    </p>
-                    <h4 id="list-item-3">Item 3</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum magnam temporibus corrupti quis vero minima dolorum commodi aut quidem libero aperiam alias, 
-                        inventore veniam quo, exercitationem magni? Aliquid, tempora. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Necessitatibus corporis ea cum porro non officia aperiam quam officiis saepe! Nemo, autem. Repellat officia vero cumque ex ipsam, inventore dolor ad.                    
-                    </p>
-                    <h4 id="list-item-4">Item 4</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque harum magnam temporibus corrupti quis vero minima dolorum commodi aut quidem libero aperiam alias, 
-                        inventore veniam quo, exercitationem magni? Aliquid, tempora. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Necessitatibus corporis ea cum porro non officia aperiam quam officiis saepe! Nemo, autem. Repellat officia vero cumque ex ipsam, inventore dolor ad.                   
-                    </p>
+        <main>  
+            <div class="container pt-5">
+                <div class="row border" style="height: 200px; overflow-y: scroll;">
+                    <div class="col-4 border">
+                        <div id="list" class="list-group pt-3 sticky-top">
+                            <a class="list-group-item list-group-item-action" href="#s1">Section 1</a>
+                            <a class="list-group-item list-group-item-action" href="#s2">Section 2</a>
+                            <a class="list-group-item list-group-item-action" href="#s3">Section 3</a>
+                            <a class="list-group-item list-group-item-action" href="#s4">Section 4</a>
+                        </div>
+                    </div>
+                    <div class="col-8 border">
+                        <div data-bs-spy="scroll" data-bs-target="#list" class="scrollspy p-3">
+                            <h4 id="s1">Section 1</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Neque mollitia officiis rem eveniet ullam vitae accusantium illum architecto aperiam facilis, 
+                                numquam, minus aspernatur nulla deleniti expedita eaque? Ducimus, ut quibusdam!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cumque deserunt vel ipsum suscipit pariatur numquam libero quam incidunt, omnis nihil, 
+                                animi exercitationem ipsam excepturi ut unde fugiat dolorem impedit eveniet?
+                            </p>
+                            <h4 id="s2">Section 2</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Neque mollitia officiis rem eveniet ullam vitae accusantium illum architecto aperiam facilis, 
+                                numquam, minus aspernatur nulla deleniti expedita eaque? Ducimus, ut quibusdam!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cumque deserunt vel ipsum suscipit pariatur numquam libero quam incidunt, omnis nihil, 
+                                animi exercitationem ipsam excepturi ut unde fugiat dolorem impedit eveniet?
+                            </p>
+                            <h4 id="s3">Section 3</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Neque mollitia officiis rem eveniet ullam vitae accusantium illum architecto aperiam facilis, 
+                                numquam, minus aspernatur nulla deleniti expedita eaque? Ducimus, ut quibusdam!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cumque deserunt vel ipsum suscipit pariatur numquam libero quam incidunt, omnis nihil, 
+                                animi exercitationem ipsam excepturi ut unde fugiat dolorem impedit eveniet?
+                            </p>
+                            <h4 id="s4">Section 4</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Neque mollitia officiis rem eveniet ullam vitae accusantium illum architecto aperiam facilis, 
+                                numquam, minus aspernatur nulla deleniti expedita eaque? Ducimus, ut quibusdam!
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cumque deserunt vel ipsum suscipit pariatur numquam libero quam incidunt, omnis nihil, 
+                                animi exercitationem ipsam excepturi ut unde fugiat dolorem impedit eveniet?
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="container mt-3">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                    Tooltip on top
-                </button>
+            <div class="container mt-3 border">
+                <div class="border">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Right">
+                        Tooltip
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Top">
+                        Tooltip
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bottom">
+                        Tooltip
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Left">
+                        Tooltip
+                    </button>
+                </div>
             </div>
         </main>
             
-        <footer class="container">
+        <footer class="container sticky-botton">
             <hr class="featurette-divider">
             <p class="float-end"><a href="#">Back to top</a></p>
             <p>© 2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            const toastSelector = document.getElementById('liveToast')
+            const toast = new bootstrap.Toast(toastSelector)
+            toast.show()
+        </script>
     </body>
-
-    <!--style>
-        *{
-            border: 1px solid red;
-        }
-    </style-->
-
 </html>
